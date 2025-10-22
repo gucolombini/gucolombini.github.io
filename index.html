@@ -16,7 +16,6 @@
   <div class="languages">languages placeholder</div>
   <div class="centered">
     <div class="portfolio-library">
-      <!-- <div style="height: 1000px; background-color: aqua;"></div> -->
       <div class="gameinfo">
           <div class="gameinfo-container lightly active">
             <div class="gameinfo-media">
@@ -129,6 +128,12 @@
 </html>
 <script>
   var buttons = document.querySelectorAll('.iconbutton');
+  const containerMap = {};
+  document.querySelectorAll(".gameinfo-container").forEach(container => {
+    const key = Array.from(container.classList).find(cls => cls !== 'gameinfo-container' && cls !== 'active');
+    containerMap[key] = container;
+  });
+  console.log(containerMap)
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       buttons.forEach(b => b.classList.remove('active'));
@@ -138,24 +143,20 @@
         left: (button.offsetLeft + button.offsetWidth / 2) - dock.clientWidth / 2,
         behavior:"smooth"
       })
-      var containers = document.querySelectorAll(".gameinfo-container");
       selectedGame = button.classList[1]
       changeBackground(selectedGame);
-      containers.forEach(container => {
-        if (container.classList.contains(selectedGame)) {
-          console.log(`show ${selectedGame}`)
-          container.classList.add("active")
-          container.scrollTo(0, 0)
-          video = container.getElementsByTagName("video")[0];
+      const selectedContainer = containerMap[selectedGame];
+      Object.entries(containerMap).forEach(([key, container]) => {
+        if (key === selectedGame) {
+          container.classList.add("active");
+          const video = container.querySelector("video");
           if (video) video.play();
         } else {
-          if (container.classList.contains("active")) {
-            container.classList.remove("active")
-            video = container.getElementsByTagName("video")[0];
-            if (video) video.pause();
-          }
+          container.classList.remove("active");
+          const video = container.querySelector("video");
+          if (video) video.pause();
         }
-      })
+      });
     })
   })
 
