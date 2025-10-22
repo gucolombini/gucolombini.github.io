@@ -3,7 +3,7 @@
 
 html, body {
   background-color: rgb(0, 0, 0);
-  
+  color: #4747FF;
   font-family: "Jersey 15", sans-serif;
   font-size: large;
   margin: 0;
@@ -46,11 +46,22 @@ html, body {
   image-rendering: crisp-edges;
 }
 
+.bg.gamelabinc {
+  background-image: url(assets/gamelabinc_bg.png);
+}
+
+.languages {
+  z-index: 9;
+  padding: 10px;
+  position: absolute;
+}
+
 .centered {
   height: 100%;
   width: 100%;
   align-content: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .portfolio-library {
@@ -125,6 +136,27 @@ html, body {
   image-rendering: crisp-edges;
 }
 
+.iconbutton.crashado {
+  background-image: url(assets/crashado_button.png);
+  background-color: #fff;
+  background-size: 90%;
+  image-rendering: crisp-edges;
+}
+
+.iconbutton.gamelabinc {
+  background-image: url(assets/gamelabinc_button.png);
+}
+
+.iconbutton.mario {
+  background-image: url(assets/mario_button.png);
+  background-size: 70%;
+  background-color: #d9f7ff;
+}
+
+.iconbutton.mario.active {
+  background-image: url(assets/mario_button.gif);
+}
+
 .gameinfo {
   position: relative;
   display: flex;
@@ -163,6 +195,7 @@ html, body {
 }
 
 .gameinfo-desc {
+  --text-bg: #00000033;
   display: flex;
   position: relative;
   width: 400px;
@@ -190,11 +223,34 @@ html, body {
   box-shadow: 0 -6px 0px 0px #222034 inset;
 }
 
+.gameinfo-desc.marygold {
+  --text-bg: #f1d2ad;
+  color: #000;
+  outline: 3px solid #955e17;
+  outline-offset: -2px;
+  background-color: #e7c499;
+  box-shadow: 0 -6px 0px 0px #955e17 inset;
+}
+
+.gameinfo-desc.crashado {
+  color: #000;
+  outline: 3px solid #000000;
+  outline-offset: -2px;
+  background-color: #ffffff;
+  box-shadow: 0 -6px 0px 0px #595959 inset;
+}
+
+.gameinfo-desc.gamelabinc {
+  color: #FFF;
+  background-color: #4747FF;
+  box-shadow: 0 -6px 0px 0px #323278 inset;
+}
+
 .gameinfo-desc-text {
   flex: 1 0 0;
   align-self: stretch;
   overflow-y: auto;
-  background-color: #00000033;
+  background-color: var(--text-bg);
   border-radius: 5px;
   padding: 15px;
   scrollbar-color: #ffffff93 rgba(0, 0, 0, 0.177);
@@ -230,12 +286,27 @@ html, body {
   content:url(assets/marygold_logo.png);
   image-rendering: crisp-edges;
   width: 190px;
+  top: -35px;
+}
+
+.gameinfo-desc-header-logo.crashado {
+  content:url(assets/crashado_logo.png);
+  image-rendering: crisp-edges;
+  width: 300px;
+  top: -30px
+}
+
+.gameinfo-desc-header-logo.gamelabinc {
+  content:url(assets/gamelabinc_logo.png);
+  width: 120px;
+  top: -50px
 }
 
 .gameinfo-media {
   position: relative;
   flex: 1 0 0;
   align-self: stretch;
+  background-color: rgba(0, 0, 0, 0.30);
   border-radius: 5px;
 
 }
