@@ -25,6 +25,27 @@ html, body {
   transition: opacity 2s ease;
 }
 
+.bg.lightly {
+  background-image: url(assets/lightly_bg.png)
+}
+
+.bg.kaos {
+  background-image: url(assets/kaos_bg.png);
+  image-rendering: crisp-edges;
+}
+
+.bg.marygold {
+  background-image: url(assets/marygold_bg.png);
+  image-rendering: crisp-edges;
+}
+
+.bg.crashado {
+  background-image: url(assets/crashado_bg.png);
+  background-repeat: repeat;
+  background-size: auto;
+  image-rendering: crisp-edges;
+}
+
 .centered {
   height: 100%;
   width: 100%;
@@ -67,15 +88,16 @@ html, body {
   border: none;
   cursor: pointer;
   padding: 0;
-  outline: 5px solid #FFF;
-  outline-offset: -1px;
-  border-radius: 2px;
+  /* outline: 5px solid #FFF;
+  outline-offset: -1px; */
+  border-radius: 5px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: all 0.2s ease;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 0 0 rgba(255, 255, 255, 0.12) inset, 0 5px 7px 0 rgba(0, 0, 0, 0.71), 0 -3px 0 0 rgba(0, 0, 0, 0.25) inset;
+  background-image: url(assets/robotcelebrate3x.png)
 }
 
 .iconbutton:hover {
@@ -85,7 +107,22 @@ html, body {
 .iconbutton.active {
   filter: grayscale(0%);
   transform: scale(1.4);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.12) inset, 0 5px 7px 0 rgba(0, 0, 0, 0.71), 0 -2px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.iconbutton.lightly {
+  background-image: url(assets/lightly_button.png);
+}
+
+.iconbutton.kaos {
+  background-image: url(assets/kaos_button.png);
+  image-rendering: crisp-edges;
+}
+
+.iconbutton.marygold {
+  background-image: url(assets/marygold_button.png);
+  background-color: #bce6ff;
+  image-rendering: crisp-edges;
 }
 
 .gameinfo {
@@ -127,6 +164,7 @@ html, body {
 
 .gameinfo-desc {
   display: flex;
+  position: relative;
   width: 400px;
   max-width: 40%;
   padding: 0px 10px;
@@ -146,6 +184,12 @@ html, body {
   box-shadow: 0 -6px 0px 0px rgb(27, 15, 55) inset;
 }
 
+.gameinfo-desc.kaos {
+  color: rgb(255, 255, 255);
+  background-color: #3f3f74;
+  box-shadow: 0 -6px 0px 0px #222034 inset;
+}
+
 .gameinfo-desc-text {
   flex: 1 0 0;
   align-self: stretch;
@@ -157,18 +201,35 @@ html, body {
 }
 
 .gameinfo-desc-header {
-  height: 120px;
+  height: 60px;
   align-self: stretch;
 }
 
 .gameinfo-desc-header-logo {
-  width: 150px;
+  width: 220px;
   padding: 10px, 10px;
   position: relative;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
   pointer-events: none;
+}
+
+.gameinfo-desc-header-logo.lightly {
+  content:url(assets/lightly_logo.png);
+  width: 220px;
+}
+
+.gameinfo-desc-header-logo.kaos {
+  content:url(assets/kaos_logo.png);
+  image-rendering: crisp-edges;
+  width: 150px;
+}
+
+.gameinfo-desc-header-logo.marygold {
+  content:url(assets/marygold_logo.png);
+  image-rendering: crisp-edges;
+  width: 190px;
 }
 
 .gameinfo-media {
