@@ -18,9 +18,9 @@
             <div class="gameinfo-media">
               <iframe id="player" type="text/html" width="100%" height="100%"
               src="https://www.youtube.com/embed/vdycewI5IxI?enablejsapi=1&origin=http://example.com"
-              frameborder="0"></iframe>
+              frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="gameinfo-desc" style="color: aliceblue; background-color: #392F58;">
+            <div class="gameinfo-desc lightly">
               <div class="gameinfo-desc-header">
                 <img class="gameinfo-desc-header-logo" src="assets/robotcelebrate3x.png">
               </div>
@@ -33,8 +33,9 @@
 
           <div class="gameinfo-container kaos">
             <div class="gameinfo-media">
-              <video class="lightly" autoplay muted loop>
+              <video class="lightly" muted loop playsinline preload="none">
                 <source src="assets/media/mario.mp4" type="video/mp4">
+                Your browser does not support the video tag.
               </video>
             </div>
             <div class="gameinfo-desc">
@@ -86,16 +87,21 @@
         if (container.classList.contains(selectedGame)) {
           console.log(`show ${selectedGame}`)
           container.classList.add("active")
+          container.scrollTo(0, 0)
+          video = container.getElementsByTagName("video")[0];
+          if (video) video.play();
         } else {
           if (container.classList.contains("active")) {
             container.classList.remove("active")
+            video = container.getElementsByTagName("video")[0];
+            if (video) video.pause();
           }
         }
       })
     })
   })
 
-  function changeBackground(game, shouldTile) {
+  function changeBackground(game) {
     console.log(game)
     backgrounds = document.querySelectorAll(".bg")
     backgrounds.forEach(bg => {

@@ -11,12 +11,6 @@ html, body {
   height: 100%;
 }
 
-video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .bg {
   position: absolute;
   background-size: cover;
@@ -47,6 +41,7 @@ video {
   display: flex;
   width: 100%;
   justify-content: center;
+  z-index: 3;
 }
 
 .dock {
@@ -73,12 +68,14 @@ video {
   cursor: pointer;
   padding: 0;
   outline: 5px solid #FFF;
-
+  outline-offset: -1px;
+  border-radius: 2px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: all 0.2s ease;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .iconbutton:hover {
@@ -117,13 +114,15 @@ video {
   align-self: stretch;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease;
+  transition: all 0.4s ease;
+  z-index: 1;
 }
 
 .gameinfo-container.active {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.8s ease;
+  z-index: 2;
 }
 
 .gameinfo-desc {
@@ -136,12 +135,25 @@ video {
   gap: 6px;
   align-self: stretch;
   background-color: #d1c2ff;
+  border-radius: 5px;
+  padding-bottom: 15px;
+  box-shadow: 0 -6px 0px 0px rgb(111, 99, 139) inset;
+}
+
+.gameinfo-desc.lightly {
+  color: rgb(255, 242, 208);
+  background-color: #392F58;
+  box-shadow: 0 -6px 0px 0px rgb(27, 15, 55) inset;
 }
 
 .gameinfo-desc-text {
   flex: 1 0 0;
   align-self: stretch;
   overflow-y: auto;
+  background-color: #00000033;
+  border-radius: 5px;
+  padding: 15px;
+  scrollbar-color: #ffffff93 rgba(0, 0, 0, 0.177);
 }
 
 .gameinfo-desc-header {
@@ -160,9 +172,31 @@ video {
 }
 
 .gameinfo-media {
+  position: relative;
   flex: 1 0 0;
   align-self: stretch;
-  background: #000000;
+  border-radius: 5px;
+
+}
+
+.gameinfo-media video {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gameinfo-media iframe {
+  border-radius: 5px;
+}
+
+.gameinfo-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  box-shadow: 0 -6px 0px 0px rgba(27, 15, 55, 0.39) inset;
+  pointer-events: none;
 }
 
 .portfolio-library {
