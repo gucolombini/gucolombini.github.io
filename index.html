@@ -149,6 +149,7 @@
       Object.entries(containerMap).forEach(([key, container]) => {
         if (key === selectedGame) {
           container.classList.add("active");
+          container.scrollTo({top: 0, behavior: "smooth"});
           const video = container.querySelector("video");
           if (video) video.play();
         } else {
