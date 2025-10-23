@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
 
 html, body {
   background-color: rgb(0, 0, 0);
   color: #4747FF;
-  font-family: "Jersey 15", sans-serif;
+  --font-default: "Open Sans";
+  --font-pixel: "Jersey 15";
+  --font-happy: "Pangolin";
+  font-family: var(--font-default);
   font-size: large;
   margin: 0;
   padding: 0;
@@ -14,10 +18,12 @@ html, body {
 .bg {
   position: absolute;
   background-size: cover;
-  height: 100%;
-  width: 100%;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
   opacity: 0;
   transition: opacity 1.2s ease;
+  overflow: hidden;
 }
 
 .bg.active {
@@ -31,19 +37,16 @@ html, body {
 
 .bg.kaos {
   background-image: url(assets/kaos_bg.png);
-  image-rendering: crisp-edges;
 }
 
 .bg.marygold {
   background-image: url(assets/marygold_bg.png);
-  image-rendering: crisp-edges;
 }
 
 .bg.crashado {
   background-image: url(assets/crashado_bg.png);
   background-repeat: repeat;
-  background-size: auto;
-  image-rendering: crisp-edges;
+  background-size: 799px;
 }
 
 .bg.gamelabinc {
@@ -99,26 +102,28 @@ html, body {
   border: none;
   cursor: pointer;
   padding: 0;
-  /* outline: 5px solid #FFF;
-  outline-offset: -1px; */
+  outline: 0px solid #ffffff00;
+  outline-offset: -1px;
   border-radius: 5px;
+  border: 1px solid #fff;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   transition: all 0.2s ease;
-  box-shadow: 0 3px 0 0 rgba(255, 255, 255, 0.12) inset, 0 5px 7px 0 rgba(0, 0, 0, 0.71), 0 -3px 0 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.71), 0 -4px 0 0 rgba(0, 0, 0, 0.25) inset;
   background-image: url(assets/robotcelebrate3x.png)
 }
 
 .iconbutton:hover {
+  outline: 2px solid #ffffff90;
   filter: grayscale(0%);
 }
 
 .iconbutton.active {
+  outline: 3px solid #ffffff;
   filter: grayscale(0%);
   transform: scale(1.4);
-  box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.12) inset, 0 5px 7px 0 rgba(0, 0, 0, 0.71), 0 -2px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
 
 .iconbutton.lightly {
@@ -127,20 +132,17 @@ html, body {
 
 .iconbutton.kaos {
   background-image: url(assets/kaos_button.png);
-  image-rendering: crisp-edges;
 }
 
 .iconbutton.marygold {
   background-image: url(assets/marygold_button.png);
   background-color: #bce6ff;
-  image-rendering: crisp-edges;
 }
 
 .iconbutton.crashado {
   background-image: url(assets/crashado_button.png);
   background-color: #fff;
   background-size: 90%;
-  image-rendering: crisp-edges;
 }
 
 .iconbutton.gamelabinc {
@@ -246,6 +248,12 @@ html, body {
   box-shadow: 0 -6px 0px 0px #323278 inset;
 }
 
+.gameinfo-desc.mario {
+  color: #FFF;
+  background-color: #4747FF;
+  box-shadow: 0 -6px 0px 0px #323278 inset;
+}
+
 .gameinfo-desc-text {
   flex: 1 0 0;
   align-self: stretch;
@@ -278,20 +286,17 @@ html, body {
 
 .gameinfo-desc-header-logo.kaos {
   content:url(assets/kaos_logo.png);
-  image-rendering: crisp-edges;
   width: 150px;
 }
 
 .gameinfo-desc-header-logo.marygold {
   content:url(assets/marygold_logo.png);
-  image-rendering: crisp-edges;
   width: 190px;
   top: -35px;
 }
 
 .gameinfo-desc-header-logo.crashado {
   content:url(assets/crashado_logo.png);
-  image-rendering: crisp-edges;
   width: 300px;
   top: -30px
 }
