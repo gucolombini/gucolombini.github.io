@@ -24,8 +24,8 @@
               frameborder="0" allowfullscreen></iframe> -->
               <video class="lightly" muted loop playsinline preload="none">
                 <source src="assets/media/lightly_video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
               </video>
+              <button class="soundbutton"></button>
             </div>
             <div class="gameinfo-desc lightly">
               <div class="gameinfo-desc-header">
@@ -42,8 +42,8 @@
             <div class="gameinfo-media">
               <video class="kaos" muted loop playsinline preload="none">
                 <source src="assets/media/mario.mp4" type="video/mp4">
-                Your browser does not support the video tag.
               </video>
+              <button class="soundbutton"></button>
             </div>
             <div class="gameinfo-desc kaos">
               <div class="gameinfo-desc-header">
@@ -60,8 +60,8 @@
             <div class="gameinfo-media">
               <video class="marygold" muted loop playsinline preload="none">
                 <source src="" type="video/mp4">
-                Your browser does not support the video tag.
               </video>
+              <button class="soundbutton"></button>
             </div>
             <div class="gameinfo-desc marygold">
               <div class="gameinfo-desc-header">
@@ -78,8 +78,8 @@
             <div class="gameinfo-media">
               <video class="crashado" muted loop playsinline preload="none">
                 <source src="" type="video/mp4">
-                Your browser does not support the video tag.
               </video>
+              <button class="soundbutton"></button>
             </div>
             <div class="gameinfo-desc crashado">
               <div class="gameinfo-desc-header">
@@ -96,8 +96,8 @@
             <div class="gameinfo-media">
               <video class="gamelabinc" muted loop playsinline preload="none">
                 <source src="" type="video/mp4">
-                Your browser does not support the video tag.
               </video>
+              <button class="soundbutton"></button>
             </div>
             <div class="gameinfo-desc gamelabinc">
               <div class="gameinfo-desc-header">
@@ -114,8 +114,8 @@
             <div class="gameinfo-media">
               <video class="mario" muted loop playsinline preload="none">
                 <source src="" type="video/mp4">
-                Your browser does not support the video tag.
               </video>
+              <button class="soundbutton"></button>
             </div>
             <div class="gameinfo-desc mario">
               <div class="gameinfo-desc-header">
@@ -150,6 +150,9 @@
 </html>
 <script>
   var buttons = document.querySelectorAll('.iconbutton');
+  var volumeButtons = document.querySelectorAll('.soundbutton');
+  var muted = true;
+
   const containerMap = {};
   document.querySelectorAll(".gameinfo-container").forEach(container => {
     const key = Array.from(container.classList).find(cls => cls !== 'gameinfo-container' && cls !== 'active');
@@ -179,12 +182,29 @@
           container.classList.add("active");
           container.scrollTo({top: 0, behavior: "smooth"});
           const video = container.querySelector("video");
-          if (video) video.play();
+          if (video) {
+            video.muted = muted;
+            video.play();
+          }
         } else {
           container.classList.remove("active");
           const video = container.querySelector("video");
           if (video) video.pause();
         }
+      });
+    })
+  })
+
+  volumeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      muted = !muted;
+      const activeVideo = document.querySelector(".gameinfo-container.active video");
+      if (activeVideo) {
+        activeVideo.muted = muted;
+        if (!activeVideo.paused) activeVideo.play();
+      }
+      volumeButtons.forEach(b => {
+        b.classList.toggle('active', !muted);
       });
     })
   })
