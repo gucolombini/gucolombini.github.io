@@ -1,0 +1,8 @@
+<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="14" height="14" fill="#1E1E1E"/>
+<g id="soundbutton">
+<path id="x" d="M9 9L13 5M9 5L13 9" stroke="white" stroke-linecap="round"/>
+<path id="soundwave" d="M3 5.5C4.38462 6.25 4.38462 7.75 3 8.5M3.92308 4C6.69231 4.75 6.69231 9.25 3.92308 10" stroke="white" stroke-linecap="round"/>
+<path id="speaker" d="M0 9V5C0 4.44772 0.447715 4 1 4H2.58579C2.851 4 3.10536 3.89464 3.29289 3.70711L5.29289 1.70711C5.92286 1.07714 7 1.52331 7 2.41421V11.5858C7 12.4767 5.92286 12.9229 5.29289 12.2929L3.29289 10.2929C3.10536 10.1054 2.851 10 2.58579 10H1C0.447715 10 0 9.55228 0 9Z" fill="white"/>
+</g>
+</svg>

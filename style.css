@@ -450,7 +450,6 @@ html, body {
   align-self: stretch;
   background-color: rgba(0, 0, 0, 0.30);
   border-radius: 5px;
-
 }
 
 .gameinfo-media video {
@@ -458,6 +457,10 @@ html, body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.gameinfo-media video.marygold {
+  object-position: bottom;
 }
 
 .gameinfo-media iframe {
