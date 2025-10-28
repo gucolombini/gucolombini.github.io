@@ -90,7 +90,6 @@ html, body {
   max-width: 800px;
   gap: 1.5rem;
   padding: 2rem 3rem;
-
 }
 
 .dock::-webkit-scrollbar {
@@ -114,41 +113,6 @@ html, body {
 
 .soundbutton.active {
   background-image: url(assets/icons/unmuted.svg);
-}
-
-.downloadbutton {
-  color: #fff;
-  font-family: var(--font-pixel);
-  font-size: x-large;
-  background-color: rgb(255, 81, 81);
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-  height: 50px;
-  padding-bottom: 6px;
-  box-shadow: 0px -6px 0px 0px #00000073 inset;
-  cursor: pointer;
-}
-
-.downloadbutton.itch {
-  background-color: #fa5c5c;
-}
-
-.downloadbutton.browser {
-  background-color: rgb(76, 76, 200);
-}
-
-.downloadbutton:hover {
-  filter: brightness(1.2);
-  outline: 3px solid #fff;
-}
-
-.downloadbutton:active {
-  transform: translateY(1px);
-  height: 48px;
-  margin-top: 2px;
-  padding-bottom: 4px;
-  box-shadow: 0px -4px 0px 0px #00000073 inset;
 }
 
 .tool-icon {
@@ -388,9 +352,54 @@ html, body {
 
 .gameinfo-desc-text p {
   margin-top: 0;
-  margin-bottom: 0.75em; /* if you still want spacing between paragraphs */
+  margin-bottom: 0.75em;
 }
 
+.gameinfo-desc-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.downloadbutton {
+  color: #fff;
+  font-family: var(--font-pixel);
+  font-size: x-large;
+  background-color: rgb(255, 81, 81);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50px;
+  padding-bottom: 6px;
+  box-shadow: 0px -6px 0px 0px #00000073 inset;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 50px;
+}
+
+.downloadbutton.itch {
+  background-color: #fa5c5c;
+}
+
+.downloadbutton.browser {
+  background-color: rgb(76, 76, 200);
+}
+
+.downloadbutton:hover {
+  filter: brightness(1.2);
+  outline: 3px solid #fff;
+}
+
+.downloadbutton:active {
+  transform: translateY(1px);
+  height: 48px;
+  margin-top: 2px;
+  padding-bottom: 4px;
+  box-shadow: 0px -4px 0px 0px #00000073 inset;
+}
 
 .gameinfo-desc-header {
   height: 60px;
