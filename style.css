@@ -55,6 +55,10 @@ html, body {
   background-image: url(assets/gamelabinc_bg.png);
 }
 
+.bg.mario {
+  background-image: linear-gradient(to bottom, #b1defe, #3b8cce);
+}
+
 .languages {
   z-index: 9;
   padding: 10px;
@@ -194,8 +198,9 @@ html, body {
 
 .iconbutton.mario {
   background-image: url(assets/mario_button.png);
-  background-size: 70%;
-  background-color: #d9f7ff;
+  background-size: 101%;
+  background-position: 1px;
+  background-color: #000000;
 }
 
 .iconbutton.mario.active {
@@ -254,6 +259,14 @@ html, body {
   box-shadow: 0px -3px 0px 0px #0000004a inset;
 }
 
+.label.twentyfour {
+  background-color: #707070;
+}
+
+.label.twentyfive {
+  background-color: #cdbd44;
+}
+
 .label.godot {
   background-color: #478cbf;
 }
@@ -278,8 +291,28 @@ html, body {
   background-color: #95af1f;
 }
 
+.label.gamedesign {
+  background-color: #866482;
+}
+
+.label.pixelart {
+  background-color: #c37e0f;
+}
+
+.label.mobile {
+  background-color: #16aaa0;
+}
+
+.label.csharp {
+  background-color: #1a6e33;
+}
+
 .label.javascript {
   background-color: #bd910f;
+}
+
+.label.gdscript {
+  background-color: #285678;
 }
 
 .gameinfo-desc {
@@ -335,9 +368,11 @@ html, body {
 }
 
 .gameinfo-desc.mario {
-  color: #FFF;
-  background-color: #4747FF;
-  box-shadow: 0 -6px 0px 0px #323278 inset;
+  color: #000;
+  background-color: #DB7D36;
+  outline: 3px solid #000000;
+  outline-offset: -2px;
+  box-shadow: 0 -6px 0px 0px #40362F inset;
 }
 
 .gameinfo-desc-text {
@@ -353,6 +388,21 @@ html, body {
 .gameinfo-desc-text p {
   margin-top: 0;
   margin-bottom: 0.75em;
+}
+
+.gameinfo-desc-text a:link {
+  color: #4f8fff;
+  text-decoration: none;
+}
+
+.gameinfo-desc-text a:hover {
+  color: #71a5ff;
+  text-decoration: underline;
+}
+
+.gameinfo-desc-text a:visited {
+  color: #953ac3;
+  text-decoration: underline;
 }
 
 .gameinfo-desc-links {
@@ -388,12 +438,16 @@ html, body {
   background-color: rgb(76, 76, 200);
 }
 
+.downloadbutton.googleplay {
+  background-color: #232d38;
+}
+
 .downloadbutton:hover {
   filter: brightness(1.2);
   outline: 3px solid #fff;
 }
 
-.downloadbutton:active {
+.downloadbutton {
   transform: translateY(1px);
   height: 48px;
   margin-top: 2px;
@@ -441,7 +495,7 @@ html, body {
 .gameinfo-desc-header-logo.gamelabinc {
   content:url(assets/gamelabinc_logo.png);
   width: 120px;
-  top: -50px
+  top: -65px
 }
 
 .gameinfo-media {
