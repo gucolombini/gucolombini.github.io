@@ -458,6 +458,7 @@ html, body {
 .gameinfo-desc-header {
   height: 60px;
   align-self: stretch;
+  text-align: center;
 }
 
 .gameinfo-desc-header-logo {
@@ -465,8 +466,6 @@ html, body {
   padding: 10px, 10px;
   position: relative;
   top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
   pointer-events: none;
 }
 
@@ -478,6 +477,7 @@ html, body {
 .gameinfo-desc-header-logo.kaos {
   content:url(assets/kaos_logo.png);
   width: 150px;
+  top: -70px
 }
 
 .gameinfo-desc-header-logo.marygold {
