@@ -14,6 +14,7 @@
   <div class="bg crashado"></div>
   <div class="bg gamelabinc"></div>
   <div class="bg mario"></div>
+  <div class="bg bird"></div>
 
   <div class="languages"></div>
 
@@ -27,8 +28,9 @@
             <div class="gameinfo-desc">
               <div class="gameinfo-desc-text">
                 <p>My name is Gustavo Colombini, I am a Computer Engineering student on my second year at the <a target="_blank" href="https://www.inteli.edu.br/en/">Institute of Technology and Leadership (Inteli)</a>. I'm an aspiring Game Developer and Designer, passionate about every single step that it takes to bring a game to life, both on the programming and artistic departments.</p>
-                <p>I have built several projects over the last few years</p>
-                <p>WIP about me page</p>
+                <p>I have since gained continuous experience in many programming languages, such as <span class="label c">C</span>, <span class="label c">C#</span>, <span class="label javascript">JavaScript</span>, or whatever I need to learn to do what I want to do! All the while I've been honing my skills on <span class="label gamedesign">Game Design</span>, <span class="label art">2D Art</span> and <span class="label art">Animation</span>, and even composing a bit of <span class="label music">Music</span>!</p>
+                <p>I've built several projects over the last few years, and I've always felt like I didn't have a good place to display and share them all, so this is why I created this website.</p>
+                <p>Hope you enjoy it!</p>
               </div>
             </div>
           </div>
@@ -190,7 +192,7 @@
             </div>
             <div class="gameinfo-desc mario">
               <div class="gameinfo-desc-header">
-                <h1>Mundo Mario</h1>
+                <div class="gameinfo-desc-header-title">Mundo Mario</div>
                 <!-- <img class="gameinfo-desc-header-logo mario"> -->
               </div>
               <div class="gameinfo-desc-labels">
@@ -211,17 +213,45 @@
             </div>
           </div>
 
+          <div class="gameinfo-container bird">
+            <div class="gameinfo-media">
+              <video class="bird" muted loop playsinline disablePictureInPicture preload="none">
+                <source src="assets/media/bird_Video.mp4" type="video/mp4">
+              </video>
+              <button class="soundbutton"></button>
+            </div>
+            <div class="gameinfo-desc bird">
+              <div class="gameinfo-desc-header">
+                <div class="gameinfo-desc-header-title">Crappy Bird</div>
+                <!-- <img class="gameinfo-desc-header-logo bird"> -->
+              </div>
+              <div class="gameinfo-desc-labels">
+                <span class="label c">Pure C</span>
+                <span class="label assembly">Assembly</span>
+              </div>
+              <div class="gameinfo-desc-text">
+                <p>Custom microkernel that runs a recreation of Flappy Bird, coded and compiled in C. Created for one of my assignments in my course in Operating Systems.</p>
+                <p>Runs in VGA Text mode, and uses Unicode characters to display the game space. Interrupt instructions for both keyboard input and update function are written in assembly, while all game logic is written in pure C. The whole source code consists of basically two files.</p>
+                <p>While it doesn't contain a bootloader (only tested on emulator), it should be pretty easy to integrate it to an existing bootloader such as GRUB and have it run on real hardware.</p>
+                <p>Had a lot of fun with this one, specially with trying to emulate visual effects like parallax with such rudimentary tools. Working with limitations only fuels my creativity and ingenuity even more!</p>
+              </div>
+              <div class="gameinfo-desc-links">
+                <a class="downloadbutton repo" target="_blank" href="https://github.com/gucolombini/microkernel-crappy-bird">
+                  GitHub Repository
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div class="gameinfo-container other">
             <div class="gameinfo-media">
             </div>
             <div class="gameinfo-desc other">
               <div class="gameinfo-desc-header">
-                <h1>Other Projects</h1>
+                <div class="gameinfo-desc-header-title">Other Projects</div>
                 <img class="gameinfo-desc-header-logo other">
               </div>
               <div class="gameinfo-desc-labels">
-                <span class="label godot">Godot Engine</span>
-                <span class="label animation">2D Animation</span>
               </div>
               <div class="gameinfo-desc-text">
                 While not full-on games, I have a few repositories I made as assignments for my course, being hosted through GitHub Pages. You can check a few of them out here!
@@ -238,6 +268,7 @@
           <button class="iconbutton crashado"></button>
           <button class="iconbutton gamelabinc"></button>
           <button class="iconbutton mario"></button>
+          <button class="iconbutton bird"></button>
           <button class="iconbutton other"></button>
         </div>
       </div>

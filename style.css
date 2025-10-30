@@ -59,6 +59,12 @@ html, body {
   background-image: linear-gradient(to bottom, #b1defe, #3b8cce);
 }
 
+.bg.bird {
+  background-image: url(assets/bird_bg.png);
+  background-repeat: repeat;
+  background-size: 294px;
+}
+
 .languages {
   z-index: 9;
   padding: 10px;
@@ -203,6 +209,11 @@ html, body {
   background-color: #000000;
 }
 
+.iconbutton.bird {
+  background-image: url(assets/bird_button.png);
+  background-size: 110%;
+}
+
 .iconbutton.mario.active {
   background-image: url(assets/mario_button.gif);
 }
@@ -303,12 +314,28 @@ html, body {
   background-color: #16aaa0;
 }
 
+.label.assembly {
+  background-color: #682308;
+}
+
+.label.c {
+  background-color: #1a2b6e;
+}
+
 .label.csharp {
   background-color: #1a6e33;
 }
 
 .label.javascript {
   background-color: #bd910f;
+}
+
+.label.java {
+  background-color: #cd822d;
+}
+
+.label.python {
+  background-color: #c6bd39;
 }
 
 .label.gdscript {
@@ -375,6 +402,12 @@ html, body {
   box-shadow: 0 -6px 0px 0px #40362F inset;
 }
 
+.gameinfo-desc.bird {
+  color: #ffffff;
+  background-color: #1318a8;
+  box-shadow: 0 -6px 0px 0px #090c61 inset;
+}
+
 .gameinfo-desc-text {
   flex: 1 0 0;
   align-self: stretch;
@@ -391,7 +424,7 @@ html, body {
 }
 
 .gameinfo-desc-text a:link {
-  color: #4f8fff;
+  color: #0055e7;
   text-decoration: none;
 }
 
@@ -403,6 +436,13 @@ html, body {
 .gameinfo-desc-text a:visited {
   color: #953ac3;
   text-decoration: underline;
+}
+
+.gameinfo-desc-text .label {
+  display: inline;
+  position: relative;
+  font-size: smaller;
+  top: -2px;
 }
 
 .gameinfo-desc-links {
@@ -465,6 +505,12 @@ html, body {
   text-align: center;
 }
 
+.gameinfo-desc-header-title {
+  padding-top: 10px;
+  font-size: 50px;
+  font-variant: small-caps;
+}
+
 .gameinfo-desc-header-logo {
   width: 220px;
   padding: 10px, 10px;
@@ -519,6 +565,10 @@ html, body {
 
 .gameinfo-media video.marygold {
   object-position: bottom;
+}
+
+.gameinfo-media video.bird {
+  object-position: top left;
 }
 
 .gameinfo-media iframe {
