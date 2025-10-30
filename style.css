@@ -6,7 +6,7 @@
 
 html, body {
   background-color: rgb(0, 0, 0);
-  color: #4747FF;
+  color: #1c1324;
   --font-default: "Open Sans";
   --font-pixel: "Jersey 15";
   --font-happy: "Pangolin";
@@ -439,7 +439,11 @@ html, body {
 }
 
 .downloadbutton.googleplay {
-  background-color: #232d38;
+  background-color: #75006f;
+}
+
+.downloadbutton.repo {
+  background-color: #292929;
 }
 
 .downloadbutton:hover {
@@ -447,7 +451,7 @@ html, body {
   outline: 3px solid #fff;
 }
 
-.downloadbutton {
+.downloadbutton:active {
   transform: translateY(1px);
   height: 48px;
   margin-top: 2px;
