@@ -183,6 +183,12 @@ html, body {
   transform: scale(1.4);
 }
 
+.iconbutton.main {
+  background-image: url(assets/house_button.svg);
+  background-color: #00000056;
+  background-size: 70%;
+}
+
 .iconbutton.lightly {
   background-image: url(assets/lightly_button.png);
 }
@@ -213,13 +219,13 @@ html, body {
   background-color: #000000;
 }
 
+.iconbutton.mario.active {
+  background-image: url(assets/mario_button.gif);
+}
+
 .iconbutton.bird {
   background-image: url(assets/bird_button.png);
   background-size: 110%;
-}
-
-.iconbutton.mario.active {
-  background-image: url(assets/mario_button.gif);
 }
 
 .gameinfo {
@@ -527,6 +533,11 @@ html, body {
   padding-top: 10px;
   font-size: 50px;
   font-variant: small-caps;
+}
+
+.gameinfo-desc-header-title {
+  text-align: center;
+  width: 100%;
 }
 
 .gameinfo-desc-header-logo {
