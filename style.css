@@ -33,6 +33,10 @@ html, body {
   transition: opacity 2s ease;
 }
 
+.bg.main {
+  background-image: linear-gradient(to bottom, #2d2d42, #05021f);
+}
+
 .bg.lightly {
   background-image: url(assets/lightly_bg.png)
 }
@@ -359,6 +363,14 @@ html, body {
   box-shadow: 0 -6px 0px 0px rgb(111, 99, 139) inset;
 }
 
+.gameinfo-desc.main {
+  max-width: none;
+  width: 100%;
+  background-color: #0000;
+  color: #c9c5d4;
+  box-shadow: none;
+}
+
 .gameinfo-desc.lightly {
   color: rgb(255, 242, 208);
   background-color: #392F58;
@@ -452,6 +464,10 @@ html, body {
   align-items: center;
   gap: 10px;
   text-align: center;
+}
+
+.gameinfo-desc-text.main {
+  font-size: larger;
 }
 
 .downloadbutton {
