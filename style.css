@@ -534,7 +534,7 @@ html, body {
 .downloadbutton:active {
   transform: translateY(1px);
   height: 48px;
-  margin-top: 2px;
+  margin-top: 4px;
   padding-bottom: 4px;
   box-shadow: 0px -4px 0px 0px #00000073 inset;
 }
@@ -549,11 +549,37 @@ html, body {
   padding-top: 10px;
   font-size: 50px;
   font-variant: small-caps;
-}
-
-.gameinfo-desc-header-title {
   text-align: center;
   width: 100%;
+}
+
+.gameinfo-desc-header-title.main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 0px;
+  top: -20px;
+}
+
+.contactlinks {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  height: 40px;
+  top: 10px;
+  position: relative;
+}
+
+.contacticon img {
+  transition: all 0.1s ease;
+}
+
+.contacticon:hover img{
+  cursor: pointer;
+  transform:translateY(-2px);
+  filter: drop-shadow(0px 0px 4px #c9c5d4);
 }
 
 .gameinfo-desc-header-logo {
