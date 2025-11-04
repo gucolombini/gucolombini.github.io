@@ -75,6 +75,22 @@ html, body {
   position: absolute;
 }
 
+.decor {
+  pointer-events: none;
+}
+
+.decor.lightly-wave {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+}
+
+.decor.lightly-wave img{
+  width: 100px;
+}
+
 .centered {
   height: 100%;
   width: 100%;
