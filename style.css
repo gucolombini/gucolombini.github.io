@@ -17,6 +17,42 @@ html, body {
   height: 100%;
 }
 
+body.backdrop {
+  transition: background-color 1.2s ease;
+}
+
+body.backdrop.main {
+  background-color: #05021f;
+}
+
+body.backdrop.lightly {
+  background-color: #1e1518;
+}
+
+body.backdrop.kaos {
+  background-color: #504d87;
+}
+
+body.backdrop.marygold {
+  background-color: #5b7c90;
+}
+
+body.backdrop.crashado {
+  background-color: #565656;
+}
+
+body.backdrop.gamelabinc {
+  background-color: #773069;
+}
+
+body.backdrop.mario {
+  background-color: #3d8dcf;
+}
+
+body.backdrop.bird {
+  background-color: #0d0d56;
+}
+
 .bg {
   position: absolute;
   background-size: cover;
@@ -26,11 +62,13 @@ html, body {
   opacity: 0;
   transition: opacity 1.2s ease;
   overflow: hidden;
+  z-index: 0;
 }
 
 .bg.active {
   opacity: 1;
   transition: opacity 2s ease;
+  z-index: 1;
 }
 
 .bg.main {
