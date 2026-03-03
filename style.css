@@ -45,6 +45,10 @@ body.backdrop.gamelabinc {
   background-color: #773069;
 }
 
+body.backdrop.heavily {
+  background-color: #a89ace;
+}
+
 body.backdrop.mario {
   background-color: #3d8dcf;
 }
@@ -95,6 +99,10 @@ body.backdrop.bird {
 
 .bg.gamelabinc {
   background-image: url(assets/gamelabinc_bg.png);
+}
+
+.bg.heavily {
+  background-image: url(assets/heavily_bg.png);
 }
 
 .bg.mario {
@@ -156,7 +164,6 @@ body.backdrop.bird {
   justify-content: space-between;
   width: 100%;
   max-width: 800px;
-  gap: 1.5rem;
   padding: 2rem 3rem;
 }
 
@@ -229,6 +236,7 @@ body.backdrop.bird {
 .iconbutton:hover {
   outline: 2px solid #ffffff90;
   filter: grayscale(0%);
+  transform: scale(1.1);
 }
 
 .iconbutton.active {
@@ -264,6 +272,10 @@ body.backdrop.bird {
 
 .iconbutton.gamelabinc {
   background-image: url(assets/gamelabinc_button.png);
+}
+
+.iconbutton.heavily {
+  background-image: url(assets/heavily_button.png);
 }
 
 .iconbutton.mario {
@@ -367,7 +379,7 @@ body.backdrop.bird {
 }
 
 .label.gamedesign {
-  background-color: #866482;
+  background-color: #bd79d8;
 }
 
 .label.pixelart {
@@ -466,6 +478,13 @@ body.backdrop.bird {
   color: #FFF;
   background-color: #4747FF;
   box-shadow: 0 -6px 0px 0px #323278 inset;
+}
+
+.gameinfo-desc.heavily {
+  color: #ffe5f2;
+  outline-offset: -2px;
+  background-color: #9b66cd;
+  box-shadow: 0 -6px 0px 0px #62378b inset;
 }
 
 .gameinfo-desc.mario {
@@ -657,6 +676,12 @@ body.backdrop.bird {
   top: -65px
 }
 
+.gameinfo-desc-header-logo.heavily {
+  content:url(assets/heavily_logo.png);
+  width: 170px;
+  top: -50px
+}
+
 .gameinfo-media {
   position: relative;
   flex: 1 0 0;
@@ -706,8 +731,9 @@ body.backdrop.bird {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    --f :40px; /* control the fading */
+    gap: 1.5rem;
 
+    --f :40px; /* control the fading */
     -webkit-mask:
       linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%,  #FFF 10%, #FFF 90%, rgba(0, 0, 0, 0.00) 100%);
     -webkit-mask-repeat: no-repeat;
