@@ -134,7 +134,18 @@ body.backdrop.bird {
 }
 
 .languages img {
-  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.71), 0 -4px 0 0 rgba(0, 0, 0, 0.25) inset;
+  --shadow-color: #454545;
+  border-radius: 5px;
+  box-shadow: 0 4px 0px 0 var(--shadow-color);
+  transition: all 0.2s ease;
+}
+
+.languages img.pt {
+  --shadow-color: #3e9c67;
+}
+
+.languages img.en {
+  --shadow-color: #949494;
 }
 
 .languages button:hover {
@@ -143,7 +154,15 @@ body.backdrop.bird {
 
 .languages button.active {
   filter: grayscale(0%);
-  transform: scale(1.2);
+}
+
+.languages button:active {
+  filter: grayscale(0%);
+  translate: 0px 5px;
+}
+
+.languages button:active img {
+  box-shadow: 0 1px 0px 0 var(--shadow-color);
 }
 
 .decor {
