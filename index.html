@@ -19,9 +19,9 @@
   <div class="bg mario"></div>
   <div class="bg bird"></div>
 
-  <div class="languages">
-    <button data-lang="en"><img class="en" src="assets/icons/flag_en.svg"></button>
-    <button data-lang="pt"><img class="pt" src="assets/icons/flag_pt.svg"></button>
+  <div class="languages fadeIn-animation" style="--i: 4">
+    <button data-lang="en"></button>
+    <button data-lang="pt"></button>
   </div>
 
   <div class="centered">
@@ -31,24 +31,23 @@
         <div class="gameinfo-container main active">
             <div class="gameinfo-desc main">
                 <div class="gameinfo-desc-header-title main">
-                  <div class="maintitle">
+                  <div class="maintitle fadeIn-animation" style="--i: 1">
                     GUSTAVO COLOMBINI<br>
                     game dev portfolio
                   </div>
                   <div class="contactlinks">
-                    <a class="contacticon" target="_blank" href="https://github.com/gucolombini"><img src="assets/icons/github_icon.svg"></a>
-                    <a class="contacticon" target="_blank" href="mailto:gucolombini@gmail.com"><img src="assets/icons/email_icon.svg"></a>
-                    <a class="contacticon" target="_blank" href="https://gucolombini.itch.io"><img src="assets/icons/itchio_icon.svg"></a>
+                    <a class="contacticon fadeIn-animation" style="--i: 2" target="_blank" href="https://github.com/gucolombini"><img src="assets/icons/github_icon.svg"></a>
+                    <a class="contacticon fadeIn-animation" style="--i: 2.5" target="_blank" href="mailto:gucolombini@gmail.com"><img src="assets/icons/email_icon.svg"></a>
+                    <a class="contacticon fadeIn-animation" style="--i: 3" target="_blank" href="https://gucolombini.itch.io"><img src="assets/icons/itchio_icon.svg"></a>
                     <!-- <a class="contacticon" href=""><img src="assets/icons/linkedin_icon.svg"></a> -->
                   </div>
                 </div>
-              <div class="gameinfo-desc-text main">
-                <p>My name is Gustavo Colombini, I am a Computer Engineering student on my second year at the <a target="_blank" href="https://www.inteli.edu.br/en/">Institute of Technology and Leadership (Inteli)</a>. I'm an aspiring Game Developer and Game Designer, passionate about every single step that it takes to bring a game to life, both on the programming and artistic departments.</p>
-                <p>I have since gained continuous experience in many programming languages, such as <span class="label c">C</span>, <span class="label c">C#</span>, <span class="label javascript">JavaScript</span>, or whatever I need to learn to do what I want to do! All the while I've been honing my skills on <span class="label gamedesign">Game Design</span>, <span class="label art">2D Art</span> and <span class="label animation">Animation</span>, and even composing a bit of <span class="label music">Music</span>!</p>
-                <p>I've built several projects over the last few years, and I've always felt like I didn't have a good place to display and share them all, so this is why I created this website.</p>
-                <p>Hope you enjoy it!</p>
+              <div class="gameinfo-desc-text main fadeIn-animation" style="--i: 3">
+                <p>Hey, if you're seeing this, it means JavaScript is turned off!</p>
+                <p>This website, while static, depends heavily on it to function properly.</p>
+                <p>Try restarting the browser or using another compatible browser!</p>
               </div>
-              <div class="decor lightly-wave">
+              <div class="decor lightly-wave fadeIn-animation" style="--i: 5">
                 <img src="assets/decor/tenebris_wave.gif">
               </div>
             </div>
@@ -72,7 +71,7 @@
                 <span class="label music">Music</span>
                 <span class="label gamedesign">Game Design</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text lightly">
                 <p>Lightly Hungry (2024) is a 2D platformer mixed with stealth-like elements, developed for the <a target="_blank" href="https://itch.io/jam/ctrl-alt-jam-3">CTRL ALT JAM 3</a> competition. You play as Tenebris, and your goal is to shroud the whole kingdom in darkness, and what's a better way to do that than eating all the light sources you see? Just be sneaky about it, you don't want to get caught!</p>
                 <p>For this project I worked closely with every facet of development, including game design, art direction and programming. I was responsible for animating all the characters and importing most of the assets in the game, taking the level design concepts and building them in the engine, several bug fixes, plus most of the sound design, including the soundtrack for the cutscenes and cave levels.</p>
                 <p>Making this game was a huge undertaking considering the short development window, being only 2 weeks (plus 2 more after we were selected for the second phase of the competition), so my team management skills were essential to keep us all on track. I learned a lot about how to properly define realisitic goals and scope for a game, and am really proud of all that was accomplished in such a tight timeframe!</p>
@@ -102,7 +101,7 @@
                 <span class="label music">Music</span>
                 <span class="label pixelart">Pixel Art</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text kaos">
                 <p><b><a target="_blank" href="https://itch.io/jam/2-hug-jam">2ND HUG JAM</a> WINNER FOR BEST SOUND DESIGN</b></p>
                 <p>Kaos com K (2024) is a highscore-based game where you must cause the most chaos and destruction within the school premises, all the while avoiding your teacher who's trying to stop your antics. Will you rebel against the system and be able to escape?</p>
                 <p>As the sole artist for the team, I designed and animated all of the assets. I landed on a pixel-art aesthetic so I could balance efficiency and style, complementing the arcade-like nature of the game.</p>
@@ -133,7 +132,7 @@
                 <span class="label javascript">JavaScript</span>
                 <span class="label music">Music</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text marygold">
                 <p>Marygold (2025) is a bait-and-switch horror browser game developed by me and my girlfriend as one of her University projects. You play as a cute little bunny and must collect the carrots in your farm, but the innocent façade quickly fades when a wolf approaches.</p>
                 <p>While I didn't work on the art or game design, I was fully responsible for the programming and music. The game was envisioned as a lost children's game you'd find in the 2000-2010s, so I worked really hard to fit that vision and make it feel as authentic as possible.</p>
                 <p>I scripted a custom level loading system which let me build the levels using Tiled and allowed me to easily create stages for the game. I was also able to implement a few shaders to allow for some glitchy and distorted visual effects in-game. Translating concept art and rough design documents into a polished, interactive experience was a great exercise!</p>
@@ -162,7 +161,7 @@
                 <span class="label art">2D Art</span>
                 <span class="label gamedesign">Game Design</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text crashado">
                 <p>Crashado (2025) is a point and click survival game where you must keep your computer from crashing by closing pop-ups, rebooting your router, reconnecting cables, and even playing music?</p>
                 <p>This project was a 3-day endeavor created for the first Inteli GameJam, an internal game jam in our college which I helped organize and promote, and also joined as a participant. I participated in the game design stage so we could come up with all the mechanics for the game. I drew all of the assets for the game (except for the gameplay, that's just a recording), it was especially fun to make the pop-ups and shove as many jokes as I could in them!</p>
                 <p>After we were done implementing all functionality in the game, I spent a long time tweaking the gameplay loop, fixing bugs and just overall polishing everything up. I also helped the sound designer to implement all audio in the game, as I already had prior experience with sound in Unity from the other games.</p>
@@ -192,7 +191,7 @@
                 <span class="label gamedesign">Game Design</span>
                 <span class="label mobile">Mobile</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text gamelabinc">
                 <p>GameLab Inc. (2025) is an idle clicker mobile game where you must code and release video games to grow and upgrade your studio. You can buy consumables such as energy drinks to get a boost in your coding speed, but be careful as the power can go out randomly and slow you down!</p>
                 <p>This project is a submission to an internal 3-day Hackaton at Wildlife Studios, which I had the privilege to participate in and develop the game in their office and making use of their proprietary technologies. This was an incredible learning experience for me, and I was able to quickly adapt to their custom workflow.</p>
                 <p>I had a hand in conceptualizing the game, specifically on how the main mechanics and progression worked. I was also responsible for the game's art direction and assets, which I decided on a flat neon artstyle so I could make assets quickly while also giving the game an appealing and marketable art style. I coded in the visual effects for the code snippets coming out of the screen, and also the entire light's out random event mechanic.</p>
@@ -223,8 +222,8 @@
                 <span class="label gamedesign">Game Design</span>
                 <span class="label mobile">Mobile</span>
               </div>
-              <div class="gameinfo-desc-text">
-                <p>Heavily Hungry (2026) is a quick paced mobile game wher you must help out some really hungry animals! Insipired by Dumb Ways to Die, play through 3 different minigames and try to complete them before the timer runs out.</p>
+              <div class="gameinfo-desc-text heavily">
+                <p>Heavily Hungry (2026) is a quick paced mobile game where you must help out some really hungry animals! Insipired by Dumb Ways to Die, play through 3 different minigames and try to complete them before the timer runs out.</p>
                 <p>This was the second time I got to participate in a Hackaton at Wildlife, developing a game in 3 days once again was a welcome challenge! I was the sole artist for the team, and I went for a softer, more pencil-like art style. It makes the game more unique and inviting, and gives it a cozy, casual aesthetic.</p>
                 <p>I am now way more experienced with importing and using animated assets in Unity, so I was able to take advantage of more complex techniques, such as using layered sprites, letting the tongue come out from inside the frog!</p>
                 <p>The game was submitted and accepted on the Google Play Store, where you can download and play the game right now! Good luck with the rat minigame, it's pretty tough!</p>
@@ -254,7 +253,7 @@
                 <span class="label gdscript">GDScript</span>
                 <span class="label animation">2D Animation</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text mario">
                 <p>Mundo Mario is a personal project I am developing in my spare time; I'm creating my own platformer from scratch with Godot and its built in physics functionalities. The main goal of this project is to improve on my own programming and artistic capabilities.</p>
                 <p>I am making all of the assets myself, based on the artwork seen on Super Mario promotional media. I currently want to deliver a fully playable level, with a small assortment of enemies and even power-ups.</p>
                 <p>I've spent a lot of time recently to make Mario's movement feel as accurate and satisfying as it does in the official games, and it feels pretty good already! You can check out the current state of the game on GitHub.</p>
@@ -283,7 +282,7 @@
                 <span class="label c">Pure C</span>
                 <span class="label assembly">Assembly</span>
               </div>
-              <div class="gameinfo-desc-text">
+              <div class="gameinfo-desc-text bird">
                 <p>Custom microkernel that runs a recreation of Flappy Bird, coded and compiled in C. Created for one of my assignments in my course in Operating Systems.</p>
                 <p>Runs in VGA Text mode, and uses Unicode characters to display the game space. Interrupt instructions for both keyboard input and update function are written in assembly, while all game logic is written in pure C. The whole source code consists of basically two files.</p>
                 <p>While it doesn't contain a bootloader (only tested on emulator), it should be pretty easy to integrate it to an existing bootloader such as GRUB and have it run on real hardware.</p>
@@ -315,15 +314,15 @@
         
       <div class="dock-container">
         <div class="dock">
-          <button class="iconbutton main active"></button>
-          <button class="iconbutton lightly"></button>
-          <button class="iconbutton kaos"></button>
-          <button class="iconbutton marygold"></button>
-          <button class="iconbutton crashado"></button>
-          <button class="iconbutton gamelabinc"></button>
-          <button class="iconbutton heavily"></button>
-          <button class="iconbutton mario"></button>
-          <button class="iconbutton bird"></button>
+          <button class="iconbutton main active fadeIn-animation" style="--i: 4"></button>
+          <button class="iconbutton lightly fadeIn-animation" style="--i: 4.1"></button>
+          <button class="iconbutton kaos fadeIn-animation" style="--i: 4.2"></button>
+          <button class="iconbutton marygold fadeIn-animation" style="--i: 4.3"></button>
+          <button class="iconbutton crashado fadeIn-animation" style="--i: 4.4"></button>
+          <button class="iconbutton gamelabinc fadeIn-animation" style="--i: 4.5"></button>
+          <button class="iconbutton heavily fadeIn-animation" style="--i: 4.6"></button>
+          <button class="iconbutton mario fadeIn-animation" style="--i: 4.7"></button>
+          <button class="iconbutton bird fadeIn-animation" style="--i: 4.8"></button>
           <!-- <button class="iconbutton other"></button> -->
         </div>
       </div>
