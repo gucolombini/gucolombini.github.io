@@ -17,6 +17,21 @@ html, body {
   height: 100%;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn-animation {
+  opacity: 0;
+  animation: 1.5s fadeIn both;
+  animation-delay: calc(var(--i) * 0.5s);
+}
+
 body.backdrop {
   transition: background-color 1.2s ease;
 }
@@ -116,9 +131,57 @@ body.backdrop.bird {
 }
 
 .languages {
+  display: flex;
+  column-gap: 15px;
+  justify-content: space-between;
   z-index: 9;
   padding: 10px;
   position: absolute;
+}
+
+.languages button {
+  background-color: #0000;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  filter: grayscale(100%);
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  --shadow-color: #454545;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5), 0 -5px 0px 0 var(--shadow-color) inset;
+  background-image: url(assets/icons/flag_en.svg);
+  transition: all 0.2s ease;
+  outline: #ffffff00 solid 0px;
+}
+
+@media (min-width: 768px) {
+  .languages button:hover {
+    filter: grayscale(0%);
+    outline: #fff solid 1px;
+    transform: scale(1.1);
+  }
+}
+.languages button[data-lang="pt"] {
+  background-image: url(assets/icons/flag_pt.svg);
+  --shadow-color: #3e9c67;
+}
+
+.languages button[data-lang="en"] {
+  background-image: url(assets/icons/flag_en.svg);
+  --shadow-color: #949494;
+}
+
+.languages button.active {
+  filter: grayscale(0%);
+}
+
+.languages button:active {
+  filter: grayscale(0%);
+  translate: 0px 5px;
+  box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5), 0 -2px 0px 0 var(--shadow-color) inset;
+  height: 32px;
 }
 
 .decor {

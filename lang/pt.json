@@ -1,0 +1,71 @@
+{
+    "title": "GUSTAVO COLOMBINI<br>portfólio de game dev",
+    "desc": {
+        "main": [
+            "Meu nome é Gustavo Colombini, sou estudante de Engenharia da Computação no <a target='_blank' href='https://www.inteli.edu.br/en/'>Instituto de Tecnologia e Liderança (Inteli)</a>. Sou um aspirante Game Dev e Game Designer, apaixonado por cada etapa necessária para dar vida a um jogo, tanto na parte de programação quanto na área artística.",
+            "Eu adquiri experiência contínua em vária linguagens de programação, como <span class='label c'>C</span>, <span class='label c'>C#</span>, <span class='label javascript'>JavaScript</span>, ou seja o que for necessário aprender pra fazer o que eu preciso! E o tempo todo venho aprimorando minhas habilidades em <span class='label gamedesign'>Game Design</span>, <span class='label art'>Arte 2D</span> e <span class='label animation'>Animação 2D</span>, até mesmo compondo um pouquinho de <span class='label music'>Música</span>!",
+            "Construí diversos projetos nos últimos anos, e sempre senti que não tinha um lugar legal pra exibir e compartilhar todos eles, e por isso criei esse site.",
+            "Espero que goste!"
+        ],
+        "lightly": [
+            "Lightly Hungry (2024) é um platformer 2D com elementos stealth, desenvolvido pra <a target='_blank' href='https://itch.io/jam/ctrl-alt-jam-3'>CTRL ALT JAM 3</a>. Você joga como o Tenebris, e seu objetivo é cobrir o reino todo na escuridão, e que jeito melhor de fazer isso se não devorando toda fonte de luz que você encontra? Só tome cuidado pra ninguém te ver, você não quer ser pego!",
+            "Eu trabalhei muito próximo de todas as facetas do desenvolvimento, incluindo game design, direção de arte e programação. Fui responsável pela animação de todos os personagens e importar a maioria dos assets no jogo, pegar conceitos de design de níveis e construí-los na engine, consertar vários bugs, e grande parte do design de som, como a trilha sonora das cutscenes e da caverna.",
+            "Criar esse jogo foi um grande desafio considerando a janela de tempo curtíssima, apenas 2 semanas (com 2 adicionais depois que fomos selecionados pra segunda fase), Então minhas habilidades de gestão de equipe foram essenciais pra manter tudo nos trilhos. Aprendi muito sobre como definir objetivos e escopo realista para um jogo, e fico super orgulhoso com tudo que conseguimos fazer em tão pouco tempo!"
+        ],
+        "kaos": [
+            "<b>VENCEDOR DO PRÊMIO DE MELHOR DESIGN DE SOM DA <a target='_blank' href='https://itch.io/jam/2-hug-jam'>2ª HUG JAM</a></b>",
+            "Kaos com K (2024) é um jogo baseado em pontuação onde você deve causar o máximo de caos e destruição dentro da escola, enquanto evita o professor que tenta acabar com as suas artimanhas. Você vai se rebelar contra o sistema e conseguir escapar?",
+            "Como o único artista do time, eu desenhei e animei todos os assets. Decidi na estética de pixel-art pra equilibrar estilo com eficiência, complementando essa natureza arcade do jogo.",
+            "A música que toca durante a gameplay foi composta por mim; é um punk rock com muita percussão, batida agressiva e vocais + guitarra altamente distorcidos, pra encaixar com a energia rebelde do jogo. Foi muito divertido fazer essa música, especialmente os vocais (Eu só falei umas frases em inglês sem sentido e taquei filtro).",
+            "Além da arte e da música, ajudei a polir a gameplay ajustando e corrigindo diversas mecânicas pra garantir uma experiência fluida. Isso incluiu melhorar o movimento do jogador e do inimigo, corrigir uma trajetória inconsistente dos projéteis do estilingue e resolver alguns softlocks encontrados durante os testes."
+        ],
+        "marygold": [
+            "Marygold (2025) é um jogo de terror estilo “bait-and-switch” para navegador desenvolvido por mim e minha namorada como um dos projetos de sua faculdade. Você joga como uma coelhinha que tem que colher as cenouras na sua fazenda, mas não se engane, essa inocência toda desaparece quando o lobo se aproxima.",
+            "Dessa vez não trabalhei com a arte ou game design, fui responsável por todo código e a música. A visão do projeto era que fosse como um jogo infantil perdido que você encontraria nos anos 2000-2010, então me esforcei bastante para que a experiência fosse bem autêntica.",
+            "Programei um sistema próprio de carregamento de fases, que me permitiu usar o Tiled para construir os níveis. Também implementei alguns shaders para adicionar efeitos visuais 'bugados' e distorcidos no jogo. Transformar artes conceituais e documentos de design em uma experiência polida e interativa foi um ótimo exercício!"
+        ],
+        "crashado": [
+            "Crashado (2025) é um jogo de sobrevivência point-and-click onde você precisa impedir seu computador de travar, e você faz isso fechando pop-ups, reiniciando o roteador, reconectando cabos - e até tocando música?",
+            "Esse projeto é fruto do esforço de 3 dias para a primeira Inteli GameJam, uma game jam interna da faculdade, qual eu ajudei a organizar e promover, e também participei. Contribuí na fase de game design para criar todas as diferentes mecânicas do jogo. Também desenhei todos os assets (exceto a gameplay no monitor, que é uma gravação), mas a melhor parte for criar todos os pop-ups e encher eles de piadas bestas.",
+            "Depois que toda a funcionalidade foi implementada, passei bastante tempo ajustando o loop de gameplay, corrigindo bugs e refinando tudo em geral. Também ajudei o designer de som a implementar todo áudio no jogo, já que eu já tinha experiência com som na Unity com meus outros jogos."
+        ],
+        "gamelabinc": [
+            "GameLab Inc. (2025) é um jogo idle clicker mobile onde você precisa programar e lançar jogos para expandir e melhorar seu estúdio. Você pode comprar consumíveis como energéticos pra turbinar seu desenvolvimento, mas tome cuidado pois a luz pode acabar a qualquer momento e atrasar seu progresso!",
+            "Esse projeto foi submetido pra Hackaton interna de 3 dias da Wildlife Studios, qual tive o privilégio de participar e desenvolver o jogo em seu escritório, fazendo uso de suas tecnologias proprietárias. Foi uma experiência de muito aprendizado pra mim, e consegui me adaptar rapidamente ao fluxo de trabalho deles.",
+            "Tive mão na concepção do jogo, especificamente nas mecânicas principais e progressão. Também fui responsável pela direção de arte e assets, escolhendo um estilo neon flat para equilibrar rapidez de produção e apelo visual. Programei os efeitos visuais dos trechos de código saindo da tela, além do evento aleatório de queda de energia.",
+            "O jogo foi submetido e aprovado na Google Play Store, onde você pode instalar e jogar ele agora mesmo! O jogo está em estado não terminado, já que tivemos que descartar muitas das ideias que tinhamos devido ao tempo, mas isso me ensinou muito sobre desenvolvimento mobile, e estou super orgulhoso de tudo que conseguimos fazer."
+        ],
+        "heavily": [
+            "Heavily Hungry (2026) é um jogo mobile onde você tem que ajudar alguns animais famintos! Inspirado em Dumb Ways to Die, jogue 3 diferentes minigames e tente completá-los antes do tempo acabar.",
+            "Essa foi a segunda vez que participei da Hackaton da Wildlife, e foi bem legal encarar o desenvolvimento de um jogo em 3 dias novamente! Eu era o artista da equipe, e escolhi um estilo mais suave, parecido com desenho a lápis no papel. Isso deixa o jogo mais único e com estética casual e acolhedora.",
+            "Agora tenho muito mais experiência em importação de assets animados em Unity, então pude aplicar algumas técnicas mais complexas, como o uso de um sprite em camadas, permitindo que a língua saísse de dentro do sapo!",
+            "O jogo foi submetido e aprovado na Google Play Store, onde você pode instalar e jogar ele agora mesmo! Boa sorte com o minigame do rato, ele é bem difícil!"
+        ],
+        "mario": [
+            "Mundo Mario é um projeto pessoal que estou desenvolvendo no meu tempo livre; estou criando um platformer do zero com Godot e suas funcionalidades de física pré-implementadas. O objetivo principal é aprimorar as minhas capacidades programacionais e artísticas.",
+            "Estou criando todos os assets por conta própria, baseado na arte promocional de Super Mario. Eu atualmente quero entregar um nível inteiro jogável, com um conjunto de inimigos e até power-ups.",
+            "Passei um bom tempo fazendo a movimentação do Mario ser satisfatória e fiel aos jogos, e já está ficando bem legal! Você pode ver o estado atual do jogo no GitHub."
+        ],
+        "bird": [
+            "Microkernel customizado que roda uma recriação de Flappy Bird, programada e compilada em C. Criado como uma das minhas ponderadas no meu curso de Sistemas Operacionais.",
+            "Executa em modo de texto VGA, e usa caractéres Unicode pra exibir o espaço de jogo. Instruções de interrupção para ambos input de teclado e função de update estão escritas em Assembly, enquanto o resto da lógica do jogo estão em C. O código fonte inteiro é basicamente dois arquivos.",
+            "Enquanto não possui bootloader próprio (só testei em emulador), deve ser bem simples integrá-lo em um bootloader existente como o GRUB e rodar ele em hardware real.",
+            "Me diverti muito com esse projeto, especialmente tentando emular efeitos visuais como paralaxe com ferramentas tão rudimentares. Acredito que trabalhar com limitações apenas fomentam a criatividade e ingenuidade ainda mais!"
+        ]
+    },
+
+    "label": {
+        "animation": "Animação 2D",
+        "art": "Arte 2D",
+        "music": "Música",
+        "pixelart": "Pixel Art",
+        "gamedesign": "Game Design"
+    },
+
+    "downloadbutton": {
+        "repo": "Repositório GitHub",
+        "googleplay": "Disponível na <b>Google Play</b>",
+        "itch": "Disponível em <b>Itch.io</b>",
+        "browser": "Jogar no Navegador"
+    }
+}
