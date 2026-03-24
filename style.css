@@ -29,7 +29,7 @@ html, body {
 .fadeIn-animation {
   opacity: 0;
   animation: 1.5s fadeIn both;
-  animation-delay: calc(var(--i) * 0.5s);
+  animation-delay: calc(var(--i) * 0.1s);
 }
 
 body.backdrop {
@@ -179,6 +179,9 @@ body.backdrop.bird {
 
 .languages button:active {
   filter: grayscale(0%);
+  transform: scale(1.1);
+  outline: #fff solid 1px;
+  transition: all 0s ease;
   translate: 0px 5px;
   box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.5), 0 -2px 0px 0 var(--shadow-color) inset;
   height: 32px;
