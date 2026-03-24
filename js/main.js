@@ -26,21 +26,22 @@ buttons.forEach(button => {
     selectedGame = button.classList[1]
     changeBackground(selectedGame);
     const selectedContainer = containerMap[selectedGame];
-    Object.entries(containerMap).forEach(([key, container]) => {
-        if (key === selectedGame) {
-        container.classList.add("active");
-        container.scrollTo({top: 0, behavior: "smooth"});
-        const video = container.querySelector("video");
-        if (video) {
-            video.muted = muted;
-            video.play();
-        }
-        } else {
-        container.classList.remove("active");
-        const video = container.querySelector("video");
-        if (video) video.pause();
-        }
-    });
+    Object.entries(containerMap).forEach(([key, container]) => 
+        {
+            if (key === selectedGame) {
+            container.classList.add("active");
+            container.scrollTo({top: 0, behavior: "smooth"});
+            const video = container.querySelector("video");
+            if (video) {
+                video.muted = muted;
+                video.play();
+            }
+            } else {
+            container.classList.remove("active");
+            const video = container.querySelector("video");
+            if (video) video.pause();
+            }
+        });
     })
 })
 

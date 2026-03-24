@@ -11,8 +11,6 @@ async function loadLanguage(lang = 'en') {
     Object.keys(translations.desc).forEach(gameKey => {
       const container = document.querySelector(`.gameinfo-desc-text.${gameKey}`);
       if (!container) return;
-
-      // Insere cada linha da array como parágrado individual
       container.innerHTML = translations.desc[gameKey]
         .map(p => `<p>${p}</p>`)
         .join('');
@@ -32,7 +30,6 @@ async function loadLanguage(lang = 'en') {
       });
     });
 
-    // Guarda preferência do usuário
     localStorage.setItem('language', lang);
 
   } catch (err) {
@@ -40,7 +37,6 @@ async function loadLanguage(lang = 'en') {
   }
 }
 
-// Lógica básica dos botões de idioma
 langButtons = document.querySelectorAll('.languages button')
 
 langButtons.forEach(btn => {
@@ -54,7 +50,6 @@ langButtons.forEach(btn => {
   });
 });
 
-// Carrega idioma salvo
 const savedLang = localStorage.getItem('language') || 'en';
 loadLanguage(savedLang);
 langButtons.forEach(btn => {
