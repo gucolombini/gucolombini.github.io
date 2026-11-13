@@ -33,13 +33,13 @@
             "GameLab Inc. (2025) is an idle clicker mobile game where you must code and release video games to grow and upgrade your studio. You can buy consumables such as energy drinks to get a boost in your coding speed, but be careful as the power can go out randomly and slow you down!",
             "This project is a submission to an internal 3-day Hackaton at Wildlife Studios, which I had the privilege to participate in and develop the game in their office and making use of their proprietary technologies. This was an incredible learning experience for me, and I was able to quickly adapt to their custom workflow.",
             "I had a hand in conceptualizing the game, specifically on how the main mechanics and progression worked. I was also responsible for the art direction and assets, which I decided on a flat neon artstyle so I could make assets quickly while also being an appealing and marketable art style. I coded in the visual effects for the code snippets coming out of the screen, and also the entire light's out random event mechanic.",
-            "The game was submitted and accepted on the Google Play Store, where you can download and play the game right now! Right now the game is at an unfinished state, as we cut out a lot of other ideas due to time constraints, but it taught me a lot about mobile development and I am really proud with all we managed to do with it."
+            "The game was formerly available on the Google Play Store. It was left at an unfinished state, as we cut out a lot of other ideas due to time constraints, but it taught me a lot about mobile development and I am really proud with all we managed to do with it."
         ],
         "heavily": [
             "Heavily Hungry (2026) is a quick paced mobile game where you must help out some really hungry animals! Insipired by Dumb Ways to Die, play through 3 different minigames and try to complete them before the timer runs out.",
             "This was the second time I got to participate in a Hackaton at Wildlife, developing a game in 3 days once again was a welcome challenge! I was the sole artist for the team, and I went for a softer, more pencil-like art style. It makes the game more unique and inviting, and gives it a cozy, casual aesthetic.",
             "I am now way more experienced with importing and using animated assets in Unity, so I was able to take advantage of more complex techniques, such as using layered sprites, letting the tongue come out from inside the frog!",
-            "The game was submitted and accepted on the Google Play Store, where you can download and play the game right now! Good luck with the rat minigame, it's pretty tough!"
+            "The game was formerly available on the Google Play Store. People had a lot of difficulty with the rat minigame, it's pretty tough!"
         ],
         "mario": [
             "Mundo Mario is a personal project I am developing in my spare time; I'm creating my own platformer from scratch with Godot and its built in physics functionalities. The main goal of this project is to improve on my own programming and artistic capabilities.",
@@ -66,6 +66,7 @@
         "repo": "GitHub Repository",
         "googleplay": "Available on <b>Google Play</b>",
         "itch": "Available on <b>Itch.io</b>",
-        "browser": "Play on Browser"
+        "browser": "Play on Browser",
+        "unavailable": "Currently unavailable :("
     }
 }

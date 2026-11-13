@@ -651,6 +651,11 @@ body.backdrop.bird {
   background-color: #292929;
 }
 
+.downloadbutton.unavailable {
+  background-color: #a1a1a1;
+  color: #626262;
+}
+
 .downloadbutton:hover {
   filter: brightness(1.2);
   outline: 3px solid #fff;

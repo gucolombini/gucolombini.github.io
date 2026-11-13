@@ -33,13 +33,13 @@
             "GameLab Inc. (2025) é um jogo idle clicker mobile onde você precisa programar e lançar jogos para expandir e melhorar seu estúdio. Você pode comprar consumíveis como energéticos pra turbinar seu desenvolvimento, mas tome cuidado pois a luz pode acabar a qualquer momento e atrasar seu progresso!",
             "Esse projeto foi submetido pra Hackaton interna de 3 dias da Wildlife Studios, qual tive o privilégio de participar e desenvolver o jogo em seu escritório, fazendo uso de suas tecnologias proprietárias. Foi uma experiência de muito aprendizado pra mim, e consegui me adaptar rapidamente ao fluxo de trabalho deles.",
             "Tive mão na concepção do jogo, especificamente nas mecânicas principais e progressão. Também fui responsável pela direção de arte e assets, escolhendo um estilo neon flat para equilibrar rapidez de produção e apelo visual. Programei os efeitos visuais dos trechos de código saindo da tela, além do evento aleatório de queda de energia.",
-            "O jogo foi submetido e aprovado na Google Play Store, onde você pode instalar e jogar ele agora mesmo! O jogo está em estado não terminado, já que tivemos que descartar muitas das ideias que tinhamos devido ao tempo, mas isso me ensinou muito sobre desenvolvimento mobile, e estou super orgulhoso de tudo que conseguimos fazer."
+            "O jogo foi disponibilizado para download na Google Play Store. O jogo está em estado não terminado, já que tivemos que descartar muitas das ideias que tinhamos devido ao tempo, mas isso me ensinou muito sobre desenvolvimento mobile, e estou super orgulhoso de tudo que conseguimos fazer."
         ],
         "heavily": [
             "Heavily Hungry (2026) é um jogo mobile onde você tem que ajudar alguns animais famintos! Inspirado em Dumb Ways to Die, jogue 3 diferentes minigames e tente completá-los antes do tempo acabar.",
             "Essa foi a segunda vez que participei da Hackaton da Wildlife, e foi bem legal encarar o desenvolvimento de um jogo em 3 dias novamente! Eu era o artista da equipe, e escolhi um estilo mais suave, parecido com desenho a lápis no papel. Isso deixa o jogo mais único e com estética casual e acolhedora.",
             "Agora tenho muito mais experiência em importação de assets animados em Unity, então pude aplicar algumas técnicas mais complexas, como o uso de um sprite em camadas, permitindo que a língua saísse de dentro do sapo!",
-            "O jogo foi submetido e aprovado na Google Play Store, onde você pode instalar e jogar ele agora mesmo! Boa sorte com o minigame do rato, ele é bem difícil!"
+            "O jogo foi disponibilizado para download na Google Play Store. Maioria dos jogadores tiveram dificuldade em passar o minigame do rato, ele é bem difícil!"
         ],
         "mario": [
             "Mundo Mario é um projeto pessoal que estou desenvolvendo no meu tempo livre; estou criando um platformer do zero com Godot e suas funcionalidades de física pré-implementadas. O objetivo principal é aprimorar as minhas capacidades programacionais e artísticas.",
@@ -66,6 +66,7 @@
         "repo": "Repositório GitHub",
         "googleplay": "Disponível na <b>Google Play</b>",
         "itch": "Disponível na <b>Itch.io</b>",
-        "browser": "Jogar no Navegador"
+        "browser": "Jogar no Navegador",
+        "unavailable": "Atualmente indisponível :("
     }
 }
